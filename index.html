@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>TD Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">My Port-Flo-lio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">À propos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                <div class="card">
+                    <img src="PPFloVacances.png" class="card-img-top" alt="PPFloVacances.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Florian Verzele</h5>
+                        <p class="card-text">Etudiant à l'INSA Hauts-de-France en troisième année, 
+je me démarque par une grande passion pour le développement. Etant créatif, je me suis lancé dans beaucoup de projets, 
+avec notamment l'écriture d'un roman fantasy mais aussi dans le développement d'un moteur de jeux 2D sur lequel je travaile toujours. 
+Ma priorité dans mon travail reste avant tout la qualité, et la rigueur. Je suis d'avis que peu de travail mais propre est davantage 
+important que ...
+                        </p>
+                        <a href="#" class="btn btn-primary">En apprendre plus</a>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                <div class="card">
+                    <img src="CV_VERZELE_Florian_Mini.png" class="card-img-top" alt="CV_VERZELE_Florian_Mini.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Mon CV</h5>
+                        <p class="card-text">Découvrez mon CV, mes compétences dans l'informatique mais également ...</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cvModal">
+                            En apprendre plus
+                        </button>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                <div class="card">
+                    <img src="Cover_Letter_VERZELE_Florian_EXAMPLE_Mini.png" class="card-img-top"
+                            alt="Cover_Letter_VERZELE_Florian_EXAMPLE_Mini.png">
+                    <div class="card-body">
+                        <h5 class="card-title">Ma lettre de motivation</h5>
+                        <p class="card-text">Apprenez-en plus sur ma motivation pour votre entreprise ici !</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lettreModal">
+                            Lire la lettre
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div id="portfolioCarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" aria-label="Slide 1" 
+                            class="active" aria-current="true"></button>
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="sudokuV2.png" class="d-block w-100" alt="sudokuV2.png">
+                        <div class="carousel-caption d-none d-md-block" style="color: black;">
+                            <h5>Un jeu de Sudoku en Python</h5>
+                            <p>Utilisation de Pygame et d'algorithmes de backtracking</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="heim.png" class="d-block w-100" alt="heim.png">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Mon propre ECS</h5>
+                            <p>Ecrit en C++, et grandement inspiré de EnTT</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="egoheim_map.jpg" class="d-block w-100" alt="Photo 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Un roman fantasy</h5>
+                            <p>La première partie de 800 pages d'une longue aventure !</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Précédent</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Suivant</span>
+                </button>
+            </div>
+        </div>
+    </main>
+    <div class="modal fade" id="cvModal" tabindex="-1" aria-labelledby="cvModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cvModalLabel">Mon CV complet</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body">
+                <img src="CV_VERZELE_Florian.png" style="width:100%; border:none;" alt="CV_VERZELE_Florian.png">
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="modal fade" id="lettreModal" tabindex="-1" aria-labelledby="lettreModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="lettreModalLabel">Ma lettre de motivation complète</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body">
+                <img src="Cover_Letter_VERZELE_Florian_EXAMPLE.png" style="width:100%; border:none;"
+                        alt="Cover_Letter_VERZELE_Florian_EXAMPLE.png">
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
